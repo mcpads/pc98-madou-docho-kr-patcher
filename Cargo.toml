@@ -1,0 +1,21 @@
+[package]
+name = "pc98-madou-docho"
+version = "1.0.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+anyhow = "1.0"
+clap = { version = "4.6", features = ["derive"] }
+crc32fast = "1.5"
+delharc = { version = "0.8", default-features = false, features = ["std"] }
+encoding_rs = "0.8.35"
+fatfs = { version = "0.3.6", default-features = false, features = ["alloc", "std"] }
+fontdue = "=0.9.3"
+png = "0.18"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+same-file = "1.0"
+sha2 = "0.10"
+tempfile = "3.23"
+v30 = { git = "https://github.com/mcpads/retro-typed-isa.git", rev = "9b31c628465cb83a633445de7d39e985be184cb7" }

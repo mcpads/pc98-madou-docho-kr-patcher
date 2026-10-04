@@ -1,0 +1,774 @@
+{
+  "format": "retrogame-patcher-pc98-fat12-raw-sfn-file-bps",
+  "id": "madou-monogatari-docho-ibun-pc98-ko-1.0.0-disc-station-vol03",
+  "title": "마도물어 도초이문 한국어 패치 1.0.0 (Disc Station 3호)",
+  "output_filename": "Madou_Monogatari_Dochou_Ibun_PC98_KR_v1.0.0.hdm",
+  "source": {
+    "size": 1261568,
+    "sha256": "2ba5ada68e76a74a2659484174b79ebf9a2c8285fab650e11a5340698d78b22e",
+    "geometry": {
+      "bytes_per_sector": 1024,
+      "sectors_per_cluster": 1,
+      "reserved_sectors": 1,
+      "fat_count": 2,
+      "root_entries": 192,
+      "total_sectors": 1232,
+      "media_descriptor": 254,
+      "sectors_per_fat": 2,
+      "sectors_per_track": 8,
+      "heads": 2
+    },
+    "mount_policy": "pc98_dos3"
+  },
+  "assembly": {
+    "retained_files": [
+      {
+        "name": "IO98.SYS",
+        "size": 9523,
+        "sha256": "16cfcead72b8de479a6f6e4082d75fb6ce185d9e63e1cfb30e9390c90cff45e1"
+      }
+    ],
+    "placed_files": [
+      {
+        "patch_key": "MEGDOS.SYS",
+        "name": "MEGDOS.SYS",
+        "source": {
+          "kind": "root_file",
+          "name": "MEGDOS.SYS"
+        },
+        "source_size": 17547,
+        "source_sha256": "ef414945c33d6a0fe199a7e75ea88c963dfc5957031fd7ac25495c45bc088ac2",
+        "transform": {
+          "kind": "bps"
+        }
+      },
+      {
+        "patch_key": "BPLAY.COM",
+        "name": "BPLAY.COM",
+        "source": {
+          "kind": "root_file",
+          "name": "BPLAY.COM"
+        },
+        "source_size": 16138,
+        "source_sha256": "60ca8542f68e2cad28f285923634f733a855c72fa2322e6a50a15475a9d66031",
+        "transform": {
+          "kind": "bps"
+        }
+      },
+      {
+        "patch_key": "CONFIG.SYS",
+        "name": "CONFIG.SYS",
+        "source": {
+          "kind": "root_file",
+          "name": "CONFIG.SYS"
+        },
+        "source_size": 38,
+        "source_sha256": "90cb95d1e1a921445fca9e175736012e2adba1144336de5a2a18dc94bada5f7e",
+        "transform": {
+          "kind": "copy"
+        }
+      },
+      {
+        "patch_key": "DSH.COM",
+        "name": "DSH.COM",
+        "source": {
+          "kind": "root_file",
+          "name": "DSH.COM"
+        },
+        "source_size": 981,
+        "source_sha256": "6266c2a213b1fb288e49cec0ef7c02ee701ace20d448284d4de730aa543ec806",
+        "transform": {
+          "kind": "bps"
+        }
+      },
+      {
+        "patch_key": "FPLAY.COM",
+        "name": "FPLAY.COM",
+        "source": {
+          "kind": "root_file",
+          "name": "FPLAY.COM"
+        },
+        "source_size": 16138,
+        "source_sha256": "a1f4e4f52df4ca8d0f927ee22d2c9140e5892233806ec2e127ba811993ebd441",
+        "transform": {
+          "kind": "bps"
+        }
+      },
+      {
+        "patch_key": "DOCHO-DATA",
+        "name": {
+          "raw_sfn_hex": "93b9919088d995b7444154"
+        },
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": {
+            "raw_name_hex": "93b9919088d995b72e444154"
+          }
+        },
+        "source_size": 5120,
+        "source_sha256": "a11937f356a9b0ba592c82f5290bac8016cb33a3f9bc68d3490147c158ebb10d",
+        "transform": {
+          "kind": "copy"
+        }
+      },
+      {
+        "patch_key": "BATTLE.CNS",
+        "name": "BATTLE.CNS",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "BATTLE.CNS"
+        },
+        "source_size": 24616,
+        "source_sha256": "f264a7eabfe4f11591ae7e8e81072de8e442820240273979757de9f657dce50e",
+        "transform": {
+          "kind": "copy"
+        }
+      },
+      {
+        "patch_key": "BSAMP.COM",
+        "name": "BSAMP.COM",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "BSAMP.COM"
+        },
+        "source_size": 5921,
+        "source_sha256": "f0644a2b56eee4aa31fed4d8e6f517cf28acd18120ceacc17b6b270f5923be91",
+        "transform": {
+          "kind": "bps"
+        }
+      },
+      {
+        "patch_key": "DUNGEON.CNS",
+        "name": "DUNGEON.CNS",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "DUNGEON.CNS"
+        },
+        "source_size": 86606,
+        "source_sha256": "ac6b28474ef399f3fc1514b60c591e326cfe717348fec6365423690cf01a9806",
+        "transform": {
+          "kind": "copy"
+        }
+      },
+      {
+        "patch_key": "ED1.CNS",
+        "name": "ED1.CNS",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "ED1.CNS"
+        },
+        "source_size": 63759,
+        "source_sha256": "0c8b0ca6046da0023dca0591578af93750b449f77ccbc53c8f4a417fc13e2ce8",
+        "transform": {
+          "kind": "copy"
+        }
+      },
+      {
+        "patch_key": "ED2.CNS",
+        "name": "ED2.CNS",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "ED2.CNS"
+        },
+        "source_size": 29155,
+        "source_sha256": "6f439af206bc13f9617138d1e61b32d793c11bde01898296f633cc5eae9006c2",
+        "transform": {
+          "kind": "copy"
+        }
+      },
+      {
+        "patch_key": "ED3.CNS",
+        "name": "ED3.CNS",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "ED3.CNS"
+        },
+        "source_size": 22607,
+        "source_sha256": "1779db3992f63be8910aaad734e5ff846cff5499f87b6d157b59009594ab125d",
+        "transform": {
+          "kind": "copy"
+        }
+      },
+      {
+        "patch_key": "ED4.CNS",
+        "name": "ED4.CNS",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "ED4.CNS"
+        },
+        "source_size": 49222,
+        "source_sha256": "d45b174b214f2e29b620763f42ce6c1117b7e02ba492af1d0664c964eac0fda8",
+        "transform": {
+          "kind": "copy"
+        }
+      },
+      {
+        "patch_key": "ED5.CNS",
+        "name": "ED5.CNS",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "ED5.CNS"
+        },
+        "source_size": 44767,
+        "source_sha256": "9a86268150b38b80cef26e2a84d7f65a79f0eee21f07643f519654653ff50b01",
+        "transform": {
+          "kind": "copy"
+        }
+      },
+      {
+        "patch_key": "ED6.CNS",
+        "name": "ED6.CNS",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "ED6.CNS"
+        },
+        "source_size": 18082,
+        "source_sha256": "9e10b0135f12774c10d4a184d92efadc1dc678ef283f82226fbb911f3284d7bf",
+        "transform": {
+          "kind": "copy"
+        }
+      },
+      {
+        "patch_key": "ED7.CNS",
+        "name": "ED7.CNS",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "ED7.CNS"
+        },
+        "source_size": 8843,
+        "source_sha256": "1b985738271f8f7df3617c7a7b7f46d855392743aea2f6f97ea033bc2e4c815d",
+        "transform": {
+          "kind": "bps"
+        }
+      },
+      {
+        "patch_key": "END.DAT",
+        "name": "END.DAT",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "END.DAT"
+        },
+        "source_size": 39496,
+        "source_sha256": "19bf94feb2b0a5aa461488ba8bdf0325cdb3787f2e8fda450a18d339eaf081c3",
+        "transform": {
+          "kind": "copy"
+        }
+      },
+      {
+        "patch_key": "END.OVL",
+        "name": "END.OVL",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "END.OVL"
+        },
+        "source_size": 6564,
+        "source_sha256": "4e81956dadb09c8dbe24ea0d67f43ffccb192001f88ea7418c4ce2b993baed6b",
+        "transform": {
+          "kind": "copy"
+        }
+      },
+      {
+        "patch_key": "ENEMY01.DAT",
+        "name": "ENEMY01.DAT",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "ENEMY01.DAT"
+        },
+        "source_size": 7129,
+        "source_sha256": "604a0fbb16900612e8d17f3255412d73afae370dd4906ed5420767bb5ec7a446",
+        "transform": {
+          "kind": "bps"
+        }
+      },
+      {
+        "patch_key": "ENEMY02.DAT",
+        "name": "ENEMY02.DAT",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "ENEMY02.DAT"
+        },
+        "source_size": 13897,
+        "source_sha256": "dd68f50d9dbbbe9103bfc65e06bc272a9b87fb39d108e43be810b60bf62c5cf9",
+        "transform": {
+          "kind": "bps"
+        }
+      },
+      {
+        "patch_key": "ENEMY03.DAT",
+        "name": "ENEMY03.DAT",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "ENEMY03.DAT"
+        },
+        "source_size": 11412,
+        "source_sha256": "a6f76b9359c47cd43f85f9b3911f3c9c9e824ffb11b8c3cf12d39f3d03165c2b",
+        "transform": {
+          "kind": "bps"
+        }
+      },
+      {
+        "patch_key": "ENEMY04.DAT",
+        "name": "ENEMY04.DAT",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "ENEMY04.DAT"
+        },
+        "source_size": 19922,
+        "source_sha256": "cb20cac70e04ab84a3e1518fbe625cd54ce502440bb8f349561e7145dc2daf20",
+        "transform": {
+          "kind": "bps"
+        }
+      },
+      {
+        "patch_key": "ENEMY05.DAT",
+        "name": "ENEMY05.DAT",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "ENEMY05.DAT"
+        },
+        "source_size": 16910,
+        "source_sha256": "b19e5621d025490dede0821e38ebc8226212237d49d0dd31a110c323bd7fad36",
+        "transform": {
+          "kind": "bps"
+        }
+      },
+      {
+        "patch_key": "ENEMY06.DAT",
+        "name": "ENEMY06.DAT",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "ENEMY06.DAT"
+        },
+        "source_size": 15911,
+        "source_sha256": "8693ac13d49773cfaaaf08109444d18db415c1fede05e08af34b172dfe11a19e",
+        "transform": {
+          "kind": "bps"
+        }
+      },
+      {
+        "patch_key": "ENEMY07.DAT",
+        "name": "ENEMY07.DAT",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "ENEMY07.DAT"
+        },
+        "source_size": 16260,
+        "source_sha256": "bf1fd9a4276ae1c677fa76cd5f8b5da466b2a8c2933f9c0b38a434d17517b06a",
+        "transform": {
+          "kind": "bps"
+        }
+      },
+      {
+        "patch_key": "ENEMY08.DAT",
+        "name": "ENEMY08.DAT",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "ENEMY08.DAT"
+        },
+        "source_size": 17491,
+        "source_sha256": "ed67d68f89235cc4f5658a868159865075c80158fdeaf50c0be2c7de6223aca9",
+        "transform": {
+          "kind": "bps"
+        }
+      },
+      {
+        "patch_key": "ENEMY09.DAT",
+        "name": "ENEMY09.DAT",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "ENEMY09.DAT"
+        },
+        "source_size": 23557,
+        "source_sha256": "e58da7dbeb3e31dda4f889857b364f068867afb5662587fd940c68ca80fca58c",
+        "transform": {
+          "kind": "bps"
+        }
+      },
+      {
+        "patch_key": "ENEMY0A.DAT",
+        "name": "ENEMY0A.DAT",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "ENEMY0A.DAT"
+        },
+        "source_size": 13216,
+        "source_sha256": "708a5ced0a340681736b3fd8d05ff6e99454a5bb75d8a972004b110bfe11162a",
+        "transform": {
+          "kind": "bps"
+        }
+      },
+      {
+        "patch_key": "ENEMY0B.DAT",
+        "name": "ENEMY0B.DAT",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "ENEMY0B.DAT"
+        },
+        "source_size": 24866,
+        "source_sha256": "136ac8d3c6999487d959f1442d59c80171e983a06f6cc7fba8fd9824d1dc1198",
+        "transform": {
+          "kind": "bps"
+        }
+      },
+      {
+        "patch_key": "ENEMY0C.DAT",
+        "name": "ENEMY0C.DAT",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "ENEMY0C.DAT"
+        },
+        "source_size": 17014,
+        "source_sha256": "f80df86adbf38fd200cbebf207ff1a07ca97f3785d38502feea8f86560ed81bf",
+        "transform": {
+          "kind": "bps"
+        }
+      },
+      {
+        "patch_key": "ENEMY0D.DAT",
+        "name": "ENEMY0D.DAT",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "ENEMY0D.DAT"
+        },
+        "source_size": 17074,
+        "source_sha256": "d0030c5135eec5b207cd1c66aa13b0794cdb86a18250581c5b8cf011e9496bbf",
+        "transform": {
+          "kind": "bps"
+        }
+      },
+      {
+        "patch_key": "ENEMY0E.DAT",
+        "name": "ENEMY0E.DAT",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "ENEMY0E.DAT"
+        },
+        "source_size": 9595,
+        "source_sha256": "7a394600af3c3a76146b1d2f2ee09d310722403b7921f3b95c305688356a51c0",
+        "transform": {
+          "kind": "bps"
+        }
+      },
+      {
+        "patch_key": "EVENT.CNS",
+        "name": "EVENT.CNS",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "EVENT.CNS"
+        },
+        "source_size": 5575,
+        "source_sha256": "dbd13840481d4b5012c7592944baace1792b1f639380bc50af3597dd2cd968e2",
+        "transform": {
+          "kind": "copy"
+        }
+      },
+      {
+        "patch_key": "FACE.CNS",
+        "name": "FACE.CNS",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "FACE.CNS"
+        },
+        "source_size": 23367,
+        "source_sha256": "ecc77c4f5d9205177749aee0068c5636ab3d8391ee9d9443da6eebb8fdd214f6",
+        "transform": {
+          "kind": "copy"
+        }
+      },
+      {
+        "patch_key": "FRAME.CS",
+        "name": "FRAME.CS",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "FRAME.CS"
+        },
+        "source_size": 35051,
+        "source_sha256": "ae24e1734fe5baa79a0a2932db84a7afd89057d98b4480447a8717231fa8a686",
+        "transform": {
+          "kind": "copy"
+        }
+      },
+      {
+        "patch_key": "GAOO.OVL",
+        "name": "GAOO.OVL",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "GAOO.OVL"
+        },
+        "source_size": 1190,
+        "source_sha256": "22346f280868f545faf56af2e9c7c536bce7776f5f1c5547b65670b07f53742d",
+        "transform": {
+          "kind": "copy"
+        }
+      },
+      {
+        "patch_key": "KFONT.BIN",
+        "name": "KFONT.BIN",
+        "source": {
+          "kind": "empty"
+        },
+        "source_size": 0,
+        "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "transform": {
+          "kind": "bps"
+        }
+      },
+      {
+        "patch_key": "MADOU.BAT",
+        "name": "MADOU.BAT",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "MADOU.BAT"
+        },
+        "source_size": 58,
+        "source_sha256": "eff213a1f47f71619ef181f14baf9c32312646841494807afca1dcc52a658fb3",
+        "transform": {
+          "kind": "copy"
+        }
+      },
+      {
+        "patch_key": "MAIN.COM",
+        "name": "MAIN.COM",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "MAIN.COM"
+        },
+        "source_size": 5585,
+        "source_sha256": "50954a2dce3f4d424558718b753029ae27b0a33273563cb2b3792318da1e6957",
+        "transform": {
+          "kind": "bps"
+        }
+      },
+      {
+        "patch_key": "MAIN.DAT",
+        "name": "MAIN.DAT",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "MAIN.DAT"
+        },
+        "source_size": 28964,
+        "source_sha256": "260fa6d93692bb984e24910fc70a28fd51c22ad61d347388695a9fefcb72b73e",
+        "transform": {
+          "kind": "copy"
+        }
+      },
+      {
+        "patch_key": "MAIN.OVL",
+        "name": "MAIN.OVL",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "MAIN.OVL"
+        },
+        "source_size": 31434,
+        "source_sha256": "419178fd0a795f629a9d67f68d58e1e6cb7539d149cfeed435a5d2c21bda924a",
+        "transform": {
+          "kind": "bps"
+        }
+      },
+      {
+        "patch_key": "MENU.COM",
+        "name": "MENU.COM",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "MENU.COM"
+        },
+        "source_size": 5870,
+        "source_sha256": "ecf2ce84f0f005ba400e68137f9d21134c1825f48bf6d930720ddd2c9f97595d",
+        "transform": {
+          "kind": "bps"
+        }
+      },
+      {
+        "patch_key": "OP1.CNS",
+        "name": "OP1.CNS",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "OP1.CNS"
+        },
+        "source_size": 50251,
+        "source_sha256": "5523c15d4bf1b1cb561b415faebeba71645a87f23204f8960b2d69de4e62eb45",
+        "transform": {
+          "kind": "copy"
+        }
+      },
+      {
+        "patch_key": "OP2.CNS",
+        "name": "OP2.CNS",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "OP2.CNS"
+        },
+        "source_size": 38459,
+        "source_sha256": "7c76fa328472c42c870c634047b1bdd796d70bbaaaa7826130dfe7e4be0cabb8",
+        "transform": {
+          "kind": "copy"
+        }
+      },
+      {
+        "patch_key": "OP3.CNS",
+        "name": "OP3.CNS",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "OP3.CNS"
+        },
+        "source_size": 2302,
+        "source_sha256": "c6b0fa234ba27aff49546f0745c378efc38464a5a77236945b245d127bbe45e6",
+        "transform": {
+          "kind": "bps"
+        }
+      },
+      {
+        "patch_key": "OPEN.DAT",
+        "name": "OPEN.DAT",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "OPEN.DAT"
+        },
+        "source_size": 21272,
+        "source_sha256": "fa874d3619cf7cf9836f6f4edf45cb1ece2af090b3132248f4c38f0cca3bc2c2",
+        "transform": {
+          "kind": "copy"
+        }
+      },
+      {
+        "patch_key": "OPEN.OVL",
+        "name": "OPEN.OVL",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "OPEN.OVL"
+        },
+        "source_size": 4941,
+        "source_sha256": "394381d9b1fec74e5bd87087f6c3e9888c79e640565e42fb8df940b4700f43dc",
+        "transform": {
+          "kind": "copy"
+        }
+      },
+      {
+        "patch_key": "S01.DAT",
+        "name": "S01.DAT",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "S01.DAT"
+        },
+        "source_size": 10525,
+        "source_sha256": "6a263b50981fc79769322e000407602a98093ffb2cfb26dfa6c8d070e92f8711",
+        "transform": {
+          "kind": "bps"
+        }
+      },
+      {
+        "patch_key": "S02.DAT",
+        "name": "S02.DAT",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "S02.DAT"
+        },
+        "source_size": 11018,
+        "source_sha256": "d97af65118168e93085fc155963673c4fc3e2522f2a5d754943db918258a5c12",
+        "transform": {
+          "kind": "bps"
+        }
+      },
+      {
+        "patch_key": "SAMP.CNS",
+        "name": "SAMP.CNS",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "SAMP.CNS"
+        },
+        "source_size": 47480,
+        "source_sha256": "f16bc3fb9c8db340040e5d240eb84ff68f1acb530bf9586ad0576720e57c4fe2",
+        "transform": {
+          "kind": "copy"
+        }
+      },
+      {
+        "patch_key": "SONG.DAT",
+        "name": "SONG.DAT",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "SONG.DAT"
+        },
+        "source_size": 21272,
+        "source_sha256": "fa874d3619cf7cf9836f6f4edf45cb1ece2af090b3132248f4c38f0cca3bc2c2",
+        "transform": {
+          "kind": "copy"
+        }
+      },
+      {
+        "patch_key": "TC.CNS",
+        "name": "TC.CNS",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "TC.CNS"
+        },
+        "source_size": 29339,
+        "source_sha256": "e6d07682a7ee9ef1b3a34c4f56e1eebe0eb6aaf895e8eb05dac7c2bc87d04932",
+        "transform": {
+          "kind": "copy"
+        }
+      },
+      {
+        "patch_key": "TITLE.CNS",
+        "name": "TITLE.CNS",
+        "source": {
+          "kind": "mz_lha_member",
+          "container": "MADOU.EXE",
+          "member": "TITLE.CNS"
+        },
+        "source_size": 107762,
+        "source_sha256": "51c157647e61a689e860a32de0e4381af0f5d045fe9b8d3018057c7b3f4ccaba",
+        "transform": {
+          "kind": "bps"
+        }
+      }
+    ]
+  }
+}
+

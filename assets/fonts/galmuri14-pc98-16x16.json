@@ -1,0 +1,15 @@
+{
+  "schema": "pc98_madou_docho.font_profile",
+  "id": "galmuri14-pc98-16x16",
+  "font": "Galmuri14.ttf",
+  "font_sha256": "6fe6c3fe4369e3837ac348431e8670733d67aa4bd550982baa72cc93c81a1c68",
+  "font_version": "2.404",
+  "font_size": 15,
+  "baseline_y": 15,
+  "vertical_fit": "baseline_then_clamp",
+  "threshold": 128,
+  "rasterizer": "fontdue 0.9.3",
+  "license": "Galmuri-OFL.txt",
+  "source": "https://github.com/quiple/galmuri",
+  "upstream_revision": "71e1cacf1437a11220307120e63e30bc275312d4"
+}
